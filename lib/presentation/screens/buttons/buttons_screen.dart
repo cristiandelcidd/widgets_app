@@ -57,6 +57,7 @@ class _ButtonsView extends StatelessWidget {
                 onPressed: () {},
                 icon: const Icon(Icons.nightlight_round_outlined),
                 label: const Text('Text Icon')),
+            const CustomButton(),
             IconButton(onPressed: () {}, icon: const Icon(Icons.pause_circle)),
             IconButton(
               onPressed: () {},
@@ -66,6 +67,32 @@ class _ButtonsView extends StatelessWidget {
                   iconColor: const MaterialStatePropertyAll(Colors.white)),
             )
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final ColorScheme colors = Theme.of(context).colorScheme;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          onTap: () {},
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text(
+              'Hola Mundo',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
         ),
       ),
     );
