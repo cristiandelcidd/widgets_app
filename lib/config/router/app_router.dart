@@ -48,8 +48,8 @@ final GoRouter appRouter = GoRouter(
     ),
     GoRoute(
       path: '/ui',
-      name: UiControllsScreen.name,
-      builder: (context, state) => const UiControllsScreen(),
+      name: UiControlsScreen.name,
+      builder: (context, state) => const UiControlsScreen(),
     ),
   ],
 );
