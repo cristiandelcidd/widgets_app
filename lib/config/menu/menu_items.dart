@@ -39,12 +39,12 @@ const appMenuItems = <MenuItem>[
       title: 'Snackbars y diálogos',
       subTitle: 'Indicadores en pantalla',
       link: '/snackbar',
-      icon: Icons.waving_hand_rounded),
+      icon: Icons.waving_hand_outlined),
   MenuItem(
       title: 'UI Controls + Tiles',
       subTitle: 'Una serie de controles de Flutter',
       link: '/ui',
-      icon: Icons.upcoming),
+      icon: Icons.upcoming_outlined),
   MenuItem(
       title: 'Introducción a la aplicación',
       subTitle: 'Pequeño tutorial introductorio',
@@ -59,5 +59,10 @@ const appMenuItems = <MenuItem>[
       title: 'Counter',
       subTitle: 'Simple contador',
       link: '/counter',
-      icon: Icons.watch_later_sharp),
+      icon: Icons.watch_later_outlined),
+  MenuItem(
+      title: 'ThemeChanger',
+      subTitle: 'Cambiar el tema de la aplicación',
+      link: '/theme-changer',
+      icon: Icons.color_lens_outlined),
 ];
