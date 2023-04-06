@@ -55,4 +55,9 @@ const appMenuItems = <MenuItem>[
       subTitle: 'Listas infinitas y pull to refresh',
       link: '/infinite',
       icon: Icons.info_outlined),
+  MenuItem(
+      title: 'Counter',
+      subTitle: 'Simple contador',
+      link: '/counter',
+      icon: Icons.watch_later_sharp),
 ];
